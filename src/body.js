@@ -1,4 +1,4 @@
-import logo from './reactjs-icon 2.png';
+// import logo from './reactjs-icon 2.png';
 
 
 export default function body() {
@@ -12,7 +12,7 @@ export default function body() {
                 <li>Is maintained by Facebook</li>
                 <li>Powers thousands of enterprise apps, including mobile apps</li>
             </ul>
-            <img src={logo} className="Side-logo" alt="logo" />
+            {/* <img src={logo} className="Side-logo" alt="logo" /> */}
         </div>
     )
 }
