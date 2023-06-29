@@ -1,0 +1,123 @@
+.pickCarSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+
+}
+.pickCar{
+    display: flex;
+    width: 85vw;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.pickCarButtons{
+    display: flex;
+    flex-direction: column;
+}
+
+.pickCarButtons > button{
+    margin: 5px;
+    background-color: #bdbdbd;
+    color: black;
+    padding: 12px 28pxpx;
+    font-size: 1.3em;  
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    text-align: start;
+    box-shadow: none;
+}
+
+
+.pickCarButtons > button::before {
+    background-color: #868484;
+    filter:brightness(1) !important;
+}
+.pickCarButtons > button:hover{
+    color: black !important;
+    text-shadow: none !important;
+    transition: all 0.5s;
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+}
+
+.pickCarButtons > button:hover::before{
+    width: 450px;
+    height: 450px;
+} 
+
+.pickCarButtons > button.active{
+    background-color: orangered !important;
+    color: white;
+    transition: all 0s;
+
+
+}
+.pickCarButtons > button.active::before{
+    background-color: orangered;
+}
+.pickCarButtons > button.active:hover{
+    color: white !important;
+    box-shadow: none;
+}
+
+
+
+.pCImage{
+    display: none;
+    padding-bottom: 40px;
+    width: 500px;
+}
+
+
+.pCImage.active{
+    display:block;
+
+}
+
+
+.pCDetails{
+    display: none;
+    width: 252px;
+}
+.pCDetails.active{
+    display: flex;
+    flex-direction: column;
+}
+
+.pCDetails > p{
+    margin: 0;
+    width: 250px;
+    padding: 8px 0px;
+    text-align: center;
+    border: 1.5px solid black;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+}
+
+.pCDetails > h4{
+    color: white;
+    background-color: orangered;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 12px 0;
+    text-align: center;
+    margin: 0;
+}
+
+.pCDetails > button{
+    margin-top: 10px;
+}
+.span{
+    width: 48%;
+    text-align: center;
+}
+
+.btn66:hover::before{
+    width: 400px;
+    height: 400px;
+  }

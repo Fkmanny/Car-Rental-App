@@ -1,0 +1,35 @@
+.saveCheapSection{
+    width: 100vw;
+    height: 367px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #2d2d2d !important;
+    
+  }
+
+  .backgroundImage{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    background: url(../images/banners/bg-1.png);
+    background-repeat: no-repeat;
+    background-position-x: 550px;
+    filter: brightness(0.8);
+    opacity: 0.7;
+  }
+
+  .innerSP{
+    width: 75%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .innerSPLeft{
+    width: 60%;
+  }

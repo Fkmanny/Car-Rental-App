@@ -1,0 +1,21 @@
+.planYourTrip{
+    width: 75%;
+    margin: auto;
+    display: flex !important;
+    flex-direction: column;
+    margin-top: 300px;
+    align-items: center;
+    text-align: center;
+}
+
+.section2Div{
+    display: flex;
+}
+
+.sect2 > p{
+    line-height:1.4; 
+    font-size: 17px; 
+    width: 70%; 
+    align-items: center; 
+    margin: 10px auto;
+}

@@ -1,0 +1,44 @@
+
+.aboutUs{
+    width: 71%;
+    margin: 220px auto;
+    margin-bottom: 150px;
+    position: relative;
+    display: flex;
+}
+
+.aboutUs > .yt_icon{
+    font-size: 130px;
+    color: #FF0000; 
+    position: absolute;
+    left: 320px;
+    top: 370px;
+    cursor: pointer;
+}
+
+.aboutUs-text{
+    margin-left: 100px;
+    width: 45%;
+}
+
+.aboutUs-text > div{
+    margin-top: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.about > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.about > div > h4{
+    color: #817f91;
+    font-weight: 500;
+    width: 50%;
+    margin-left: 15px;
+}

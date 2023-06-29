@@ -1,0 +1,58 @@
+
+.section1{
+    margin-top: 80px;
+    width: 100%;
+    margin-left: 13%;
+    display: flex;
+    flex-direction: row;
+}    
+
+.sect1-text{
+    margin-top: 30px;
+    width: 30%;
+}
+.sect1-text > h3{
+    margin-bottom: 10px; 
+    font-weight: 500;
+}
+.sect1-text > h1{
+    margin-top: 0; 
+    padding-top: 0; 
+    margin-bottom: 30px;
+}
+
+.sect1-buttons{
+    margin-top: 23px;
+}
+.icon{
+    margin-left: 10px;
+
+}
+
+.btn2{
+    background-color: black !important;
+    filter:brightness(1) !important;
+    margin-left: 7px;
+}
+.btn2::before {
+    background-color: white !important;
+    filter:brightness(1) !important;
+}
+.btn2:hover{
+    color: orangered !important;
+    text-shadow: none !important;
+    transition: all 0.5s;
+}
+
+.section1 > .div{
+    position: relative;
+}
+.section1 > .div > img{
+    position: absolute;
+    top: -25px;
+    left: -70px;
+    width: 900px;
+}
+.orangered{
+    color: orangered;
+}

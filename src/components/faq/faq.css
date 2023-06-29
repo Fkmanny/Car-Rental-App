@@ -1,0 +1,106 @@
+.faq{
+    height: 75vh;
+    background: url(../images/faq/car.png);
+    background-repeat: no-repeat;
+    background-position-x: -1px;
+    background-position-y: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.faq > button, .faqButton1, .faqButton2, .faqButton3{
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    color: black;
+    width: 50%;
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 16%);
+    padding: 22px 40px;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+
+.faq > div{
+    background-color: white;
+    width: 43%;
+    padding: 7px 36px;
+    text-align: start;
+}
+
+.faq > button::before{
+    background-color: #ffffff;
+    filter:brightness(0.75);
+
+}
+.faq > button:hover::before{
+    width: 1500px;
+    height: 1500px;
+}
+.faq > button:hover{
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+    text-shadow: none;
+}
+
+.faqh4{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    font-size: 19px;
+    font-weight: 500 !important;
+    width: 100%;
+}
+
+.faq > button i{
+    width: 15%;
+    color: black;
+}
+
+.faq > div > p{
+    line-height: 1.6rem;
+}
+
+
+.faqButton1.active, .faqButton2.active, .faqButton3.active, .faq > button i.active{
+    background-color: orangered !important;
+    color: white;
+    transition: all 0s;
+}
+
+.ic.active{
+    transform: rotate(180deg);
+}
+
+.faqButton1.active::before, .faqButton2.active::before, .faqButton3.active::before{
+    background-color: orangered;
+    filter:brightness(1);
+
+}
+.faqButton1.active:hover, .faqButton2.active:hover, .faqButton3.active:hover{
+    color: white !important;
+}
+
+
+
+.faqBtn1Answer{
+    display: none;
+    transition: all 4s !important;
+}
+.faqBtn1Answer.active{
+    display: block;
+    transition: all 4s !important;
+}
+.faqBtn2Answer{
+    display: none;
+}
+.faqBtn2Answer.active{
+    display: block;
+}
+.faqBtn3Answer{
+    display: none;
+}
+.faqBtn3Answer.active{
+    display: block;
+}

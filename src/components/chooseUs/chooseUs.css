@@ -1,0 +1,53 @@
+.chooseUs{
+    width: 100vw;
+    padding: 0% 12.5% 5% 12.5%;
+    margin: 100px auto;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('../images/chooseUs/bg.png');
+    background-repeat: no-repeat;
+    background-position-y: 280px;
+    background-position-x: 1px;
+}
+
+.chooseContainers{
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.why{
+    width: 35%;
+}
+
+.why2{
+    width: 57%;
+}
+.why2sub{
+    width: 54%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.why2sub img{
+    width: 130px !important;
+    height: 110px !important;
+}
+
+.why2sub > div{
+    margin-left: 13px;
+}
+
+.why2sub h3{
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 600;
+    margin: 0;
+}
+
+.why2sub p{
+    margin-top: 7px;
+    line-height: 1.5rem;
+}
