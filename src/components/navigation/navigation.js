@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import "./navigation.css";
+import "../navigation/navigation.css";
 
 export const Navigation = () => {
 

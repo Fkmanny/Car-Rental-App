@@ -157,8 +157,8 @@ button:hover::before{
     }
     .NavMenuContainer {
         width: 100%;
-        align-items: end;
-        justify-content: end;
+        align-items: flex-end;
+        justify-content: flex-end;
         display: flex;
     }
     .NavMenuContainer .NavMenuUl{
@@ -173,7 +173,7 @@ button:hover::before{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: start;
+        align-items: flex-start;
         z-index: 1;
         overflow-x: hidden;
         transition: .5s ease left;

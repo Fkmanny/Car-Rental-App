@@ -38,8 +38,8 @@ window.addEventListener("scroll", () => {
               <h3>CAR <span style={{fontWeight: 400}}>Rental</span></h3>
               <p>Use securing confined his shutters. Delightful as he it acceptance an solicitude discretion.</p>
               <div>
-                <a href="#"><FontAwesomeIcon className='icons' icon={faPhone} />(123) 498-4600</a>
-                <a href="#"><FontAwesomeIcon className='icons' icon={faEnvelope} />example@carrental.com</a>
+                <a href="/"><FontAwesomeIcon className='icons' icon={faPhone} />(123) 498-4600</a>
+                <a href="/"><FontAwesomeIcon className='icons' icon={faEnvelope} />example@carrental.com</a>
               </div>
               
             </div>
@@ -47,11 +47,11 @@ window.addEventListener("scroll", () => {
             <div className="carRental footer2">
               <h3>COMPANY</h3>
               <ul>
-                <li><a href="#">New York</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Mobile</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">How we work</a></li>
+                <li><a href="/">New York</a></li>
+                <li><a href="/">Careers</a></li>
+                <li><a href="/">Mobile</a></li>
+                <li><a href="/">Blog</a></li>
+                <li><a href="/">How we work</a></li>
               </ul>
             </div>
 

@@ -1,4 +1,4 @@
-export default [
+ const data =   [
     {
       id : 0,
       name : "VW Golf 6",
@@ -83,3 +83,5 @@ export default [
       fuel: "Gasoline"
     }
 ]
+
+export default data;
