@@ -158,3 +158,8 @@ h5{
   margin-bottom: 150px;
   margin-top: 320px;
 }
+
+.carDivs.active{
+  margin-top: 90px !important;
+
+}

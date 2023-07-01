@@ -69,10 +69,10 @@ useEffect(()=>{
                 <Link to="/Testimonials">Testimonials</Link>
               </li>
               <li className="NavMenuLi" onClick={handleItemClick}>
-                <Link to="/ourteam">Our Team</Link>
+                <Link to="/Ourteam">Our Team</Link>
               </li>
               <li className="NavMenuLi" onClick={handleItemClick}>
-                <Link to="/contact">Contact</Link>
+                <Link to="/Contact">Contact</Link>
               </li>
             </ul>
           </nav>
