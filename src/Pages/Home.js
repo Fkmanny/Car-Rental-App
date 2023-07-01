@@ -6,7 +6,7 @@ import { AboutUs } from "../components/aboutUs/aboutUs";
 import { PickCar } from "../components/pickCar/pickCar";
 import { SaveCheap } from "../components/saveCheap/saveCheap";
 import { ChooseUs } from "../components/chooseUs/chooseUs";
-import { Testimonials } from "../components/testimonials/testimonials";
+import { Testimonialss } from "../components/testimonials/testimonials";
 import { Faq } from "../components/faq/faq";
 import { Download } from "../components/download/download";
 import { Footer } from "../components/footer/footer";
@@ -25,7 +25,7 @@ function Home() {
           <PickCar />
           <SaveCheap />
           <ChooseUs />
-          <Testimonials />
+          <Testimonialss />
           <Faq />
           <Download />
           <Footer />

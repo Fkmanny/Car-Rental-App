@@ -66,7 +66,7 @@ useEffect(()=>{
                 <Link to="/Vehiclemodels">Vehicle Models</Link>
               </li>
               <li className="NavMenuLi" onClick={handleItemClick}>
-                <Link to="/testimonialPage">Testimonials</Link>
+                <Link to="/Testimonials">Testimonials</Link>
               </li>
               <li className="NavMenuLi" onClick={handleItemClick}>
                 <Link to="/ourteam">Our Team</Link>

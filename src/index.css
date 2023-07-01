@@ -24,8 +24,9 @@ body{
   margin-bottom: 355px !important;
 }
 .sector2{
-  height: 55vh;
+  height: 51.8vh;
   position: relative;
+  width: 100vw;
 }
 
 .About-bg-img{
@@ -116,7 +117,44 @@ h5{
 }
 
 
+.aboutDiv{
+  position: relative;
+  width: 77%;
+  margin: 60px auto;
+}
 
+.homeLink{
+  width: 17%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
 
+.a-Tag, .homeLink > p{
+  color: black;
+  text-decoration: none;
+  transition: all 0.35s;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
 
+}
+.a-Tag:hover{
+  color: orangered;
+}
+.homeLink > p{
+  margin: 0;
+}
 
+.carDivs{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 150px;
+  margin-top: 320px;
+}
