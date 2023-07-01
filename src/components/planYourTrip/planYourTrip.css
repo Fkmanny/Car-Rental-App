@@ -3,7 +3,8 @@
     margin: auto;
     display: flex !important;
     flex-direction: column;
-    margin-top: 300px;
+    margin-top: 10px !important;
+    margin-bottom: 130px !important;
     align-items: center;
     text-align: center;
 }

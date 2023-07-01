@@ -1,0 +1,37 @@
+.miniBanner{
+    height: 20vh;
+    width: 100vw;
+    position: relative;
+    opacity: 0.9;
+    margin-bottom: 100px;
+}
+
+.bannerImg{
+    position: absolute;
+    z-index: 0;
+    filter:brightness(0.3);
+}
+
+.banner-text{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+    align-items: center;
+}
+
+.banner-text > h2{
+    color: white;
+    font-size: 35px;
+}
+
+.h2{
+    font-family: "Rubik", sans-serif;
+    color: orangered !important;
+}
+
+.phoneIcon{
+    margin-right: 10px;
+}

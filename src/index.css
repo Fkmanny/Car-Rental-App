@@ -21,6 +21,18 @@ body{
   background-repeat: no-repeat;
   background-position-x: 870px;
   height: 110vh;
+  margin-bottom: 355px !important;
+}
+.sector2{
+  height: 55vh;
+  position: relative;
+}
+
+.About-bg-img{
+  top: 0px;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.1;
 }
 
 
