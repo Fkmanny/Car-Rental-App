@@ -14,6 +14,9 @@ body{
   width: 100vw !important;
   overflow-x: hidden;
 }
+body.freeze{
+  overflow: hidden;
+}
 
 .sector{
   background: linear-gradient(360deg, white, #eaeaea);
@@ -167,5 +170,11 @@ h5{
 @media screen and (max-width: 1360px){
   button{
     transform: scale(0.85);
+  }
+}
+
+@media screen and (max-width: 500px){
+  button{
+    transform: scale(0.78);
   }
 }

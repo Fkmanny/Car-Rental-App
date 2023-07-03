@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import "../navigation/navigation.css";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export const Navigation = () => {
   
@@ -19,7 +21,9 @@ useEffect(()=>{
   const location = useLocation();
 
   const handleToggleMenu = () => {
+
     setIsOpen(!isOpen);
+
   };
 
   const handleItemClick = () => {
@@ -57,6 +61,8 @@ useEffect(()=>{
               <div className="bar"></div>
             </div>
             <ul className={`NavMenuUl ${isOpen ? 'active' : ''}`}>
+              {/* <FontAwesomeIcon className='times' icon={faTimes} size='2xl'></FontAwesomeIcon> */}
+
               <li className="NavMenuLi" onClick={handleItemClick}>
                 <Link to="/">Home</Link>
               </li>

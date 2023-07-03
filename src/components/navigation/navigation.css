@@ -62,7 +62,7 @@
     animation: hamburger_pulse 1s ease infinite;
 }
 .hamburger .bar{
-    height: 2px;
+    height: 4px;
     width: 30px;
     position: relative;
     background-color: #ff5130;
@@ -80,10 +80,10 @@
     transition-property: top, bottom;
 }
 .hamburger .bar::after{
-    top: 8px;
+    top: 10px;
 }
 .hamburger .bar::before{
-    bottom: 8px;
+    bottom: 10px;
 }
 .hamburger.active .bar::before,
 .hamburger.active .bar::after{
@@ -127,6 +127,12 @@ button:hover::before{
     width: 450px;
     height: 450px;
   }
+  .times{
+    display: none;
+    position: absolute;
+    right: 29px;
+    top: 25px;
+  }
 
 /* Responsive code */
 @media screen and (max-width: 1360px) {
@@ -144,6 +150,7 @@ button:hover::before{
 @media screen and (max-width: 1200px)  {
     .TopNavContainer{
         width: 90%;
+        padding: auto;
     }
     .NavMenuLi{
         padding: 10px 10px ;
@@ -151,13 +158,20 @@ button:hover::before{
     
 }
 @media screen and (max-width: 1024px) {
-    .logo{
+    .LogoBox{
         width: auto;
+    }
+    .SignRegister{
+        display: none;
     }
     .hamburger{
         display: flex;
         cursor: pointer;
         z-index: 100;
+    }
+    .times{
+        display: block;
+        color: orangered;
     }
     .NavMenuContainer {
         width: 100%;
@@ -169,10 +183,9 @@ button:hover::before{
         list-style: none;
         position: absolute;
         background-color: black;
-        opacity: 90%;
-        width: 97%;
+        width: 100%;
         height: 100vh;
-        left: -100%;
+        left: -110%;
         top: 0;
         display: flex;
         flex-direction: column;
@@ -181,9 +194,27 @@ button:hover::before{
         z-index: 1;
         overflow-x: hidden;
         transition: .5s ease left;
+        text-align: center;
     }
     .NavMenuContainer .NavMenuUl.active{
-        left: 0;
+        left: -5%;
+        width: 110%;
+        height: 100%;
+        text-align: center;
+        position: fixed;
+        overflow: hidden;
+    }
+
+    .hamburger.active{
+        position: fixed;
+    }
+    
+    .NavMenuContainer .NavMenuUl.active > .NavMenuLi{
+        width: 40%;
+        margin: 0 auto;
+    }
+    .NavMenuUl.active {
+        position: fixed;
     }
     .NavMenuContainer .NavMenuUl a{
         text-decoration: none;
@@ -191,9 +222,10 @@ button:hover::before{
         text-transform: uppercase;
         padding: auto;
         display: block;
+        
     }
     .NavMenuContainer .NavMenuUl a:hover{
-        color: black;
+        color: #acaaaa;
     }
     .NavMenuContainer .NavMenuUl .NavMenuLi:hover a::after{
         transform: translate(-50%, -50%) scale(1);
@@ -204,14 +236,10 @@ button:hover::before{
     }
 }
 @media screen and (max-width: 500px){
-    .LogoBox img{
-        height: 70px;
-        width: 70px;
-        object-fit: contain;
+    .Logo{
+        width: 100px;
     }
 }
 @media screen and (max-width: 320px){
-    .SignRegister{
-        display: none;
-    }
+    
 }
