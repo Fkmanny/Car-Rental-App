@@ -5,10 +5,18 @@ import { faBriefcase, faCar, faCarSide, faGaugeHigh, faStar } from '@fortawesome
 
 export const CarDivSection = (props) => {
     
+    const hoverNow = ()=>{
+        const rand = 0;
+        for (let index = 0; rand < 5; index++) {
+        document.querySelector(`.carImg${index}`).classList.add('active');
+        }
+      }
 
   return (
-    <div className='carDiv'>
-        <img src={`./${props.img}`}  alt='' />
+    <div onMouseOver={hoverNow} className={`carDiv carImg${props.id}`}>
+        <div style={{overflow: "hidden"}}>
+            <img src={`./${props.img}`}  alt='' />
+        </div>
         <div className='card-text'>
             <div className='card-text1'>
                 <div className='flex-col'>

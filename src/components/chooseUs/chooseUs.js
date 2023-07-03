@@ -5,6 +5,13 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
 export const ChooseUs = () => {
 
+  const hoverNow = ()=>{
+    const rand = 3;
+    for (let index = 4; rand <= 6; index++) {
+    document.querySelector(`.obj${index}`).classList.add('active');
+    }
+  }
+
   useEffect(()=>{
     const btnEl33 = document.querySelector(".btn33");
 btnEl33.addEventListener("mouseover", (event) => {
@@ -27,21 +34,21 @@ btnEl33.addEventListener("mouseover", (event) => {
         <button className="btn33"><span>Find Deals <FontAwesomeIcon icon={faAngleRight} style={{marginLeft: "10px"}}/></span></button>
       </div>
       <div className="why2">
-        <div className="why2sub">
+        <div onMouseOver={hoverNow} className="why2sub obj4">
           <img src="images/chooseUs/icon1.png" alt=""/>
           <div>
             <h3>Cross Country Drive</h3>
             <p>Speedily say has suitable disposal add boy. On forth doubt miles of child. Exercise joy man children rejoiced.</p>
           </div>
         </div>
-        <div className="why2sub">
+        <div onMouseOver={hoverNow} className="why2sub obj5">
           <img src="images/chooseUs/icon2.png" alt=""/>
           <div>
             <h3>All Inclusive Pricing</h3>
             <p>Yet uncommonly his ten who diminution astonished. Demesne new manners savings staying had.</p>
           </div>
         </div>
-        <div className="why2sub">
+        <div onMouseOver={hoverNow} className="why2sub obj6">
           <img src="images/chooseUs/icon3.png" alt=""/>
           <div>
             <h3>No Hidden Charges</h3>

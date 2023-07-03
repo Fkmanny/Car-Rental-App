@@ -30,6 +30,14 @@
 .h2{
     font-family: "Rubik", sans-serif;
     color: orangered !important;
+    filter: brightness(0.9);
+
+}
+.h2:hover{
+    filter: brightness(1.2);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.5s;
 }
 
 .phoneIcon{

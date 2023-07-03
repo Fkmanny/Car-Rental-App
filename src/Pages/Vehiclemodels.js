@@ -11,6 +11,7 @@ function Vehiclemodels() {
         return(
             <CarDivSection 
                 key = {item.id}
+                id = {item.id}
                 img = {item.img}
                 name = {item.name}
                 price = {item.price}

@@ -26,6 +26,13 @@ export const Section1 = () => {
         btnEl2.style.setProperty("--yPos", y + "px");
     });
   })
+
+   const scrollToForm = () => {
+      window.scrollTo({
+        top: 580,
+        behavior : 'smooth'
+      });
+   }
   
   return (
     <div className='section1'>
@@ -34,7 +41,7 @@ export const Section1 = () => {
                 <h1>Save <span className='orangered'>big</span> with our car rental</h1>
                 <p>To contribute to positive change and achieve our sustainability goals with many extraordinary.</p>
                 <div className="sect1-buttons">
-                    <button className="btnn"><span>Book Ride<FontAwesomeIcon className='icon' icon={faCircleCheck} /></span></button>
+                    <button className="btnn" onClick={scrollToForm}><span>Book Ride<FontAwesomeIcon className='icon' icon={faCircleCheck} /></span></button>
                     <button className="btn2"><span>Learn More<FontAwesomeIcon className='icon' icon={faAngleRight} /></span></button>
                 </div>
             </div>

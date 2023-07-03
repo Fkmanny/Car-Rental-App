@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import "../navigation/navigation.css";
 
 export const Navigation = () => {
+  
 
 useEffect(()=>{
   const registerBtn = document.querySelector(".Btn10")

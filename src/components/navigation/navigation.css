@@ -8,8 +8,8 @@
     left: 0;
     position: absolute;
     margin: auto;
-
 }
+
 .TopNavContainer{
     background-color: transparent;
     width: 77%;
@@ -130,27 +130,28 @@ button:hover::before{
 
 /* Responsive code */
 @media screen and (max-width: 1360px) {
-    #Header{
-        width: 95%;
-        padding: 0 2.5%;
+    .TopNavContainer{
+        width: 85%;
     }
     .SignRegister{
         width: auto;
     }
     .SignRegister p{
-        width: 8rem;
+        width: 4rem;
     }
-    .NavMenuLi{
-        padding: auto ;
-    }
+    
 }
-@media screen and (max-width: 1073px) and (min-width: 1025px) {
-    .NavMenuLi{
-        padding: 0 10px;
+@media screen and (max-width: 1200px)  {
+    .TopNavContainer{
+        width: 90%;
     }
+    .NavMenuLi{
+        padding: 10px 10px ;
+    }
+    
 }
 @media screen and (max-width: 1024px) {
-    .LogoBox{
+    .logo{
         width: auto;
     }
     .hamburger{

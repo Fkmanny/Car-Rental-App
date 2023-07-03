@@ -163,3 +163,9 @@ h5{
   margin-top: 90px !important;
 
 }
+
+@media screen and (max-width: 1360px){
+  button{
+    transform: scale(0.85);
+  }
+}
