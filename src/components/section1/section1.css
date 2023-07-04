@@ -56,3 +56,42 @@
 .orangered{
     color: orangered;
 }
+
+@media screen and (max-width: 1024px){
+    .div > img{
+        transform: scale(0.8);
+    }
+    .sect1-text{
+        width: 40%;
+    }
+  }
+
+@media screen and (max-width: 660px){
+    .div{
+        display: none;
+    }
+    .section1{
+        margin-top: 60px;
+        margin-left: auto;
+    }
+
+    .sect1-text{
+        width: 85%;
+        margin: auto;
+    }
+    .sect1-text > p{
+        line-height: 1.5rem;
+    }
+    .sect1-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn2{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .sect1-buttons > button{
+        padding: 20px 40px !important;
+        border-radius: 5px;
+    }
+}

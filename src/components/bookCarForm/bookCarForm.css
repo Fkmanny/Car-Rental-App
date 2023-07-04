@@ -2,7 +2,7 @@
     position: relative;
     width: 73%;
     background-color: white;
-    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 12.5%);
     margin: 135px auto;
     margin-top: 170px;
     padding: 30px 40px;
@@ -53,3 +53,30 @@
     width: 550px;
     height: 550px;
   }
+
+    @media screen and (max-width: 660px){
+        .bookForm{
+            margin-top: 100px;
+        }
+        .formHeader{
+            flex-direction: column;
+            align-items: start !important;
+        }
+        .formHeader > h4{
+            margin-top: 0;
+            /* transform: scale(0.6); */
+        }
+        .formFlexdiv{
+            flex-direction: column;
+        }
+        .formFlexdiv > div {
+            width: 100% !important;
+        }
+        .formFlexdiv > button{
+            width: 100% !important;
+            align-self: flex-start !important; 
+            margin-top: 20px;
+            padding: 18px 35px !important;
+            border-radius: 4px;
+        }
+    }

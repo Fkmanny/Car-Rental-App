@@ -46,7 +46,7 @@ export const Section1 = () => {
                 </div>
             </div>
             <div className="div">
-            <img src="images/hero/main-car.png" alt=""/>
+              <img src="images/hero/main-car.png" alt=""/>
             </div>
     </div>
   )

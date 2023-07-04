@@ -149,8 +149,9 @@ button:hover::before{
 }
 @media screen and (max-width: 1200px)  {
     .TopNavContainer{
-        width: 90%;
+        width: 95%;
         padding: auto;
+
     }
     .NavMenuLi{
         padding: 10px 10px ;
@@ -241,6 +242,7 @@ button:hover::before{
     .Logo{
         width: 100px;
     }
+    
 }
 @media screen and (max-width: 320px){
     

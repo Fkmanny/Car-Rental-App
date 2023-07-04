@@ -47,3 +47,19 @@
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
+
+  @media screen and (max-width: 600px) {
+    .planYourTrip > h1{
+        font-size: 40px !important;
+        line-height: 3rem;
+    }
+    .planYourTrip > h3{
+        transform: scale(0.9);
+    }
+    .section2Div{
+        flex-direction: column;
+    }
+    .sect2 > p{
+        width: 100%;
+    }
+  }

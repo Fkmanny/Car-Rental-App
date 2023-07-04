@@ -172,12 +172,18 @@ h5{
     transform: scale(0.85);
   }
 }
+@media screen and (max-width: 950px){
+  .sector{
+    margin-bottom: 655px !important;
+  }
+}
 
 @media screen and (max-width: 500px){
   button{
-    transform: scale(0.95);
+    transform: scale(1);
   }
-  body{
-    overflow-x: hidden;
+  .sector{
+    margin-bottom: 755px !important;
   }
+
 }
