@@ -39,7 +39,6 @@ useEffect(()=>{
   };
 
     const handleScroll = () => {
-      console.log(navbarRef.current.offsetHeight);
     const navbarHeight = navbarRef.current.offsetHeight;
     const scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
