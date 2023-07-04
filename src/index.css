@@ -175,7 +175,7 @@ h5{
 
 @media screen and (max-width: 500px){
   button{
-    transform: scale(0.78);
+    transform: scale(0.95);
   }
   body{
     overflow-x: hidden;
