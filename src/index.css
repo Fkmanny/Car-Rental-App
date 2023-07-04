@@ -177,4 +177,7 @@ h5{
   button{
     transform: scale(0.78);
   }
+  body{
+    overflow-x: hidden;
+  }
 }

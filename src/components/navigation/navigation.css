@@ -161,9 +161,9 @@ button:hover::before{
     .LogoBox{
         width: auto;
     }
-    /* .SignRegister{
-        display: none;
-    } */
+    .SignRegister{
+        transform: scale(0.85);
+    }
     .hamburger{
         display: flex;
         cursor: pointer;
