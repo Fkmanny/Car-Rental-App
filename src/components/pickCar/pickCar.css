@@ -134,6 +134,7 @@
     }
     .pickCar{
         flex-direction: column;
+        margin-top: 20px;
     }
     .pCDetailsDiv{
         width: 100%;
@@ -141,7 +142,7 @@
     .pCDetails{
         width: 100%;
         margin: auto;
-        transform: scale(0.9);
+        transform: scale(0.8);
     }
     .pCDetails > h4{
         width: 100% !important;
@@ -152,14 +153,15 @@
         margin: auto;
     }
     .pCImage{
-        width: 300px;
-        padding-bottom: 10px;
+        width: 250px;
+        padding-bottom: 0px;
     }
     .pickCarButtons{
         flex-direction: row; 
         flex-wrap: wrap;
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
+        transform: scale(0.83);
     }
     .pickCarButtons > button{
         /* transform: scale(0.7); */

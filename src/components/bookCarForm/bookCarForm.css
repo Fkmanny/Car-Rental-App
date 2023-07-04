@@ -41,7 +41,7 @@
     margin-bottom: 10px;
 }
 .bookForm input, select{
-    padding: 17px 20px;
+    padding: 17px 20px !important;
     border: 1px solid rgb(191, 220, 229);
     border-radius: 3px;
     cursor: pointer;
@@ -57,6 +57,9 @@
     @media screen and (max-width: 660px){
         .bookForm{
             margin-top: 100px;
+        }
+        .bookForm input, select{
+            padding: 17px 20px !important;
         }
         .formHeader{
             flex-direction: column;
