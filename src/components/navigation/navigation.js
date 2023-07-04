@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import "../navigation/navigation.css";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -19,6 +19,7 @@ useEffect(()=>{
 
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const navbarRef = useRef(null);
 
   const handleToggleMenu = () => {
 
@@ -37,10 +38,22 @@ useEffect(()=>{
     setIsOpen(false);
   };
 
+    const handleScroll = () => {
+      console.log(navbarRef.current.offsetHeight);
+    const navbarHeight = navbarRef.current.offsetHeight;
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+    if (scrollPosition > navbarHeight * 0.6) {
+      setIsOpen(false);
+    }
+  };
+
   useEffect(() => {
     window.addEventListener("click", handleOutsideClick);
+    window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener("click", handleOutsideClick);
+      window.removeEventListener('scroll', handleScroll);
     };
     
   }, []);
@@ -52,7 +65,7 @@ useEffect(()=>{
   return (
     <>
       {/* <section className="Header" id="Header"> */}
-        <div className="TopNavContainer">
+        <div className="TopNavContainer" ref={navbarRef}>
 
             <img src="./images/logo/logo.png" alt="logo" className='Logo'/>
 
