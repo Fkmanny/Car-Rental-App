@@ -68,4 +68,47 @@
 
   }
 
- 
+ @media screen and (max-width: 1300px ) {
+    .chooseUs{
+        width: 90%;
+        margin: auto  !important;
+        padding: 50px 0  !important;
+
+    }
+    .chooseUs > img{
+        width: 100% !important;
+        margin: 0;
+    }
+ }
+ @media screen and (max-width: 1024px) {
+    .chooseContainers{
+        flex-direction: column;
+        width: 95%;
+    }
+    .why{
+        width: 100%;
+    }
+    .why > h1{
+        font-size: 36px !important;
+        line-height: 3.1rem !important;
+    }
+    .why2, .why2sub{
+        width: 100%;
+    }
+    .why2{
+        margin-top: 70px;
+    }
+    .why2sub img{
+        transform: scale(0.8);
+    }
+    .why2sub h3{
+        font-size: 1.2rem;
+        margin-top: 13px;
+    }
+    .why2sub p{
+        font-size: 0.9rem;
+    }
+    .why2sub div{
+        margin-left: 7px;
+    }
+ }

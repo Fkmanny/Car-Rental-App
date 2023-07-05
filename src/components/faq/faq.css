@@ -17,11 +17,18 @@
     color: black;
     width: 50%;
     box-shadow: 0 10px 20px 0 rgb(0 0 0 / 16%);
-    padding: 22px 40px;
+    padding: 22px 40px ;
     text-align: start;
     display: flex;
     justify-content: space-between;
-    border-radius: 3px;
+    border-radius: 0 ;
+}
+.faqButton1{
+    border-radius: 6px 6px 0px 0px !important;
+}
+
+.faqButton3{
+    border-radius: 0px 0px 6px 6px !important;
 }
 
 .faq > div{
@@ -103,4 +110,38 @@
 }
 .faqBtn3Answer.active{
     display: block;
+}
+
+
+@media screen and (max-width: 1360px) {
+    .faq {
+        width: 100% !important;
+        background: none;
+    }
+    .faq > h1{
+        font-size: 38px !important;
+        line-height: 3.3rem;
+    }
+    .faq > p, .faq > h3, .faq > h1, .faq > button, .faq > div{
+        width: 90% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center;
+    }
+    .faq > div{
+        width: 85% !important;
+        padding: 7px 0px;
+        text-align: start !important;
+    }
+    .faq > button h4{
+        font-size: 12px !important;
+    }
+    .faq > button{
+        padding: auto !important;
+        padding-top: 22px !important;
+        padding-bottom: 42px !important;
+    }
+    .faq > div > p{
+        font-size: 14px;
+    }
 }

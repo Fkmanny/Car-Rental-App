@@ -81,3 +81,22 @@
     width: 100%;
   }
   
+  @media screen and (max-width: 1024px) {
+    .testimonials > div{
+        width: 90%;
+        justify-content: center;
+        align-items: start;
+    }
+    .testimonials > div > p{
+        text-align:start !important;
+        width: 100% !important;
+    }
+    .testimonials > div > h1{
+        font-size: 38px !important;
+        line-height: 2.9rem;
+        margin: 13px 0 18px 0 !important;
+    }
+    .mySwiper {
+        width: 100%;
+    }
+  }
