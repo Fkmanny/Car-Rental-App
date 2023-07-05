@@ -142,7 +142,7 @@
     .pCDetails{
         width: 100%;
         margin: auto;
-        transform: scale(0.8);
+        transform: scale(0.7);
     }
     .pCDetails > h4{
         width: 100% !important;

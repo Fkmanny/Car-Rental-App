@@ -58,8 +58,15 @@
         .bookForm{
             margin-top: 100px;
         }
-        .bookForm input, select{
-            padding: 17px 20px !important;
+        .bookForm input{
+            width: 253px;
+            height: 54px;
+            padding: 0 0 0 20px !important;
+        }
+        .bookForm select{
+            width: 274px;
+            height: 54px;
+            padding: 0 0 0 20px !important;
         }
         .formHeader{
             flex-direction: column;
