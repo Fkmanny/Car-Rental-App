@@ -111,5 +111,8 @@ footer{
     .carRental{
         width: 100%;
     }
+    .footer2{
+        align-items: start !important;
+    }
     
 }

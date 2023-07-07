@@ -71,7 +71,7 @@ export const Faq = () => {
         {/* === FAQ Dropdown 1 ============================================== */}
 
 
-        <button onClick={() => {change(1);}} className='fBtn faqButton1 active' id='faqButton1'>1. What is special about comparing rental car deals?
+        <button onClick={() => {change(1);}} className='fBtn faqButton1 active' id='faqButton1'><span>1. What is special about comparing rental car deals?</span>
         <FontAwesomeIcon icon={faAngleDown} className='icon1 active ic' size='xl'></FontAwesomeIcon>
         </button>
         <div className='faqBtn1Answer active' id='faqBtn1Answer'>
@@ -83,8 +83,10 @@ export const Faq = () => {
         {/* === FAQ Dropdown 2 ============================================== */}
 
 
-        <button onClick={() => {change(2);}} className='fBtn faqButton2' id='faqButton2'>2. How do I find the car rental deals?
-        <FontAwesomeIcon icon={faAngleDown} className='ic icon2' size='xl'></FontAwesomeIcon>
+        <button onClick={() => {change(2);}} className='fBtn faqButton2' id='faqButton2'><span>
+          2. How do I find the car rental deals?
+          </span>
+          <FontAwesomeIcon icon={faAngleDown} className='ic icon2' size='xl'></FontAwesomeIcon>
         </button>
         <div className='faqBtn2Answer' id='faqBtn2Answer'>
           <p>You can find car rental deals by researching online and comparing prices from different rental companies. Websites such as Expedia, Kayak, and Travelocity allow you to compare prices and view available rental options.
@@ -94,7 +96,7 @@ export const Faq = () => {
         
         {/* === FAQ Dropdown 3 ============================================== */}
 
-        <button onClick={() => {change(3);}} className='fBtn faqButton3' id='faqButton3'>3. How do I find such low rental car prices?
+        <button onClick={() => {change(3);}} className='fBtn faqButton3' id='faqButton3'><span>3. How do I find such low rental car prices?</span>
         <FontAwesomeIcon icon={faAngleDown} className='ic icon3' size='xl'></FontAwesomeIcon>
         </button>
         <div className='faqBtn3Answer' id='faqBtn3Answer'>
