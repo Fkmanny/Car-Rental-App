@@ -27,10 +27,10 @@ body.freeze{
   margin-bottom: 355px !important;
 }
 .sector2{
-  height: 51.8vh;
+  /* height: 51.8vh; */
   position: relative;
   width: 100vw;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .About-bg-img{
@@ -196,7 +196,7 @@ h5{
     margin-bottom: 755px !important;
   }
   .About-bg-img{
-    left: -326%;
+    left: -280%;
   }
   .aboutDiv > h1{
     font-size: 34px !important;
