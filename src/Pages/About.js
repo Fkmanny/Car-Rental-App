@@ -11,27 +11,29 @@ import { Link } from 'react-router-dom'
 
 function About(){
   return (
-    <>
-    <div className="sector2">
-      <img className="About-bg-img" src="./images/hero/heroes-bg.png" alt=""></img>
+    <div className="main-container">
+    <div className="mini-container">
       <Navigation />
-      <div className="aboutDiv">
-          <h1 style={{fontSize: "37px", margin:0}}>About</h1>
-          <div className='homeLink'>
-            <Link to='/' className='a-Tag'>Home</Link>
-            <p>/</p>
-            <p>About</p>
-          </div>
+      <div className="sector2">
+        {/* <img className="About-bg-img" src="./images/hero/heroes-bg.png" alt=""></img> */}
+        <div className="aboutDiv">
+            <h1 style={{fontSize: "37px", margin:0}}>About</h1>
+            <div className='homeLink'>
+              <Link to='/' className='a-Tag'>Home</Link>
+              <p>/</p>
+              <p>About</p>
+            </div>
+        </div>
       </div>
+      <div style={{height: "10px"}}></div>
+      <AboutUs />
+      <PlanYourTrip />
+      <SaveCheap />
+      <ChooseUs />
+      <MiniBanner />
+      <Footer />
     </div>
-    <AboutUs />
-    <PlanYourTrip />
-    <SaveCheap />
-    <ChooseUs />
-    <MiniBanner />
-    <Footer />
-    </>
-    
+    </div>
 
   )
 }

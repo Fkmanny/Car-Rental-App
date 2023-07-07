@@ -25,13 +25,11 @@ function Vehiclemodels() {
 
 
   return (
-    <>
+    <div className="main-container">
+    <div className="mini-container">
+        <Navigation />
         <div className="sector2">
-
-                <img className="About-bg-img" src="./images/hero/heroes-bg.png" alt=""></img>
-
-            <Navigation />
-            <div className="aboutDiv">
+            <div className="aboutDiv test">
                 <h1 style={{fontSize: "37px", margin:0, wordSpacing: "0.3rem"}}>Vehicle Models</h1>
                 <div className='homeLink'>
                     <Link to='/' className='a-Tag'>Home</Link>
@@ -45,7 +43,8 @@ function Vehiclemodels() {
             <MiniBanner />
             <Footer />
         </div>
-    </>
+    </div>
+    </div>
   )
 }
 

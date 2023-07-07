@@ -206,6 +206,8 @@ button:hover::before{
     .NavMenuContainer .NavMenuUl.active{
         left: -5%;
         width: 110%;
+        position: absolute;
+        /* height: 100vh !important; */
         /* height: 100%; */
         text-align: center;
         /* position: fixed; */

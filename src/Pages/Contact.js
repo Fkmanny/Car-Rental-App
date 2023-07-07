@@ -9,22 +9,23 @@ import React from 'react'
 export default function Ourteam() {
     
   return (
-    <>
+    <div className="main-container">
+    <div className="mini-container">
         <div className="sector2">
-            <img className="About-bg-img" src="./images/hero/heroes-bg.png" alt=""></img>
             <Navigation />
-            <div className="aboutDiv">
-                <h1 style={{fontSize: "37px", margin:0, wordSpacing: "0.3rem"}}>Our Team</h1>
+            <div className="aboutDiv test2">
+                <h1 style={{fontSize: "37px", margin:0, wordSpacing: "0.3rem"}}>Contact</h1>
                 <div className='homeLink'>
                     <Link to='/' className='a-Tag'>Home</Link>
                     <p>/</p>
-                    <p>Our Team</p>
+                    <p>Contact</p>
                 </div>
             </div>
         </div>
         <AddInfo />
         <MiniBanner />
         <Footer />
-    </>
+    </div>
+    </div>
   )
 }

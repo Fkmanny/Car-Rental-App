@@ -5,8 +5,8 @@ import { faEnvelope, faEnvelopeOpen, faHome, faPhone } from '@fortawesome/free-s
 
 export const AddInfo = () => {
   return (
-    <div>
-        <img src= "./images/banners/map.png"alt='' style={{height: "80%", width : "100%" }} />
+    <div className='init-addinfo'>
+        <img className='map' src= "./images/banners/map.png"alt='' style={{height: "80%", width : "100%" }} />
 
         <div className='AddInfoDiv'>
             <div className='AddInfoDiv1'>
@@ -15,7 +15,7 @@ export const AddInfo = () => {
                 <div style={{marginTop : "40px"}}>
                     <h4><FontAwesomeIcon className='icons' icon={faPhone} /> (562) 498-4600</h4>
                     <h4><FontAwesomeIcon className='icons' icon={faEnvelope} /> Xyz@carrental.com</h4>
-                    <h4 style={{lineHeight : "1.6rem"}}><FontAwesomeIcon className='icons' icon={faHome}/> Level 1, 121 King Street Melbourne, <span style={{marginLeft: "33px"}}>3000, Australia</span></h4>
+                    <h4 style={{lineHeight : "1.6rem"}}><FontAwesomeIcon className='icons io' icon={faHome}/> Level 1, 121 King Street <span className='span1'> Melbourne, </span><span className='span2' style={{marginLeft: "33px"}}>3000, Australia</span></h4>
                 </div>
             </div>
 

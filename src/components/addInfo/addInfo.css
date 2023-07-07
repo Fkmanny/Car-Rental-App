@@ -67,3 +67,46 @@ label{
     color: orangered;
     margin-left: 4px;
 }
+
+@media screen and (max-width: 730px) {
+    .init-addinfo{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .AddInfoDiv{
+        flex-direction: column;
+        width: 90%;
+    }
+    .AddInfoDiv1{
+        width: 100%;
+    }
+    .AddInfoDiv1 h1{
+        font-size: 38px !important;
+        line-height: 3rem !important;
+    }
+    .AddInfoDiv1 p{
+        width: 90% !important;
+    }
+    .AddInfoDiv1 h4{
+        width: 90% !important;
+    }
+    .span2{
+        margin-left: 0 !important;
+    }
+    .span1{
+        margin-left: 33px !important;
+    }
+
+    .AddInfoDiv2{
+        width: 89%;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .map{
+        height: 220px !important;
+        width: 650px !important;
+    }
+}
