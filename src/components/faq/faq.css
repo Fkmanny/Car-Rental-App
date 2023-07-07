@@ -40,26 +40,23 @@
     text-align: start;
 }
 
-.faq > button::before{
+.fBtn::before{
     background-color: #ffffff;
     filter:brightness(0.75);
 
 }
-.faq > button:hover::before{
+.fBtn:hover::before{
     width: 1500px;
     height: 1500px;
 }
-.faq > button:hover{
+.fBtn:hover{
     box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
     text-shadow: none;
 }
 
-.faqh4{
 
-    width: 100%;
-}
 
-.faq > button i{
+.fBtn i{
     width: 15%;
     color: black;
 }
@@ -121,7 +118,7 @@
         font-size: 38px !important;
         line-height: 3.3rem;
     }
-    .faq > p, .faq > h3, .faq > h1, .faq > button, .faq > div{
+    .faq > p, .faq > h3, .faq > h1, .fBtn , .faq > div{
         width: 90% !important;
         margin-left: auto !important;
         margin-right: auto !important;

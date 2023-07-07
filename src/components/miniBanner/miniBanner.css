@@ -4,6 +4,7 @@
     position: relative;
     opacity: 0.9;
     margin-bottom: 100px;
+    overflow: hidden;
 }
 
 .bannerImg{
@@ -42,4 +43,29 @@
 
 .phoneIcon{
     margin-right: 10px;
+}
+
+@media screen and (max-width:1024px) {
+    .miniBanner{
+        height: 40vh;
+
+    }
+    .bannerImg{
+        height: 100%;
+        width: 350%;
+    }
+    .banner-text{
+        width: 90% !important;
+        margin: auto;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .banner-text > h2{
+        line-height: 3rem;
+    }
+    .h2{
+        margin-top: 0;
+        font-size: 2rem !important;
+    }
 }

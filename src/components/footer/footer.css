@@ -114,5 +114,13 @@ footer{
     .footer2{
         align-items: start !important;
     }
+    .bottomFooter{
+        text-align: center;
+    }
+    .icon10{
+        transform: scale(0.8);
+        right: 26px;
+        bottom: 30px;
+    }
     
 }

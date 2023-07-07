@@ -30,6 +30,7 @@ body.freeze{
   height: 51.8vh;
   position: relative;
   width: 100vw;
+  /* overflow-x: hidden; */
 }
 
 .About-bg-img{
@@ -171,10 +172,19 @@ h5{
   button{
     transform: scale(0.85);
   }
+
 }
+
+
+
 @media screen and (max-width: 950px){
   .sector{
     margin-bottom: 655px !important;
+  }
+  .carDivs{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -185,5 +195,13 @@ h5{
   .sector{
     margin-bottom: 755px !important;
   }
-
+  .About-bg-img{
+    left: -326%;
+  }
+  .aboutDiv > h1{
+    font-size: 34px !important;
+  }
+  .homeLink{
+    width: 70% !important;
+  }
 }
