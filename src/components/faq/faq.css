@@ -22,6 +22,8 @@
     display: flex;
     justify-content: space-between;
     border-radius: 0 ;
+    font-size: 19px;
+    font-weight: 500 !important;
 }
 .faqButton1{
     border-radius: 6px 6px 0px 0px !important;
@@ -53,10 +55,7 @@
 }
 
 .faqh4{
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    font-size: 19px;
-    font-weight: 500 !important;
+
     width: 100%;
 }
 
@@ -140,10 +139,9 @@
 }
 
 @media screen and (max-width: 860px) {
-    .faq > button h4{
-        font-size: 12px !important;
-    }
+    
     .fBtn{
+        font-size: 12px !important;
         padding: auto !important;
         padding-top: 22px !important;
         padding-bottom: 42px !important;
