@@ -85,7 +85,7 @@
     .testimonials > div{
         width: 90%;
         justify-content: center;
-        align-items: start;
+        align-items: center;
     }
     .testimonials > div > p{
         text-align:start !important;

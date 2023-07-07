@@ -143,9 +143,13 @@
     .faq > button h4{
         font-size: 12px !important;
     }
-    .faq > button{
+    .fBtn{
         padding: auto !important;
         padding-top: 22px !important;
-        padding-bottom: 82px !important;
+        padding-bottom: 42px !important;
+
+    }
+    .faq > button > span{
+
     }
 }
