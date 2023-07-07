@@ -27,7 +27,9 @@ function Vehiclemodels() {
   return (
     <>
         <div className="sector2">
-            <img className="About-bg-img" src="./images/hero/heroes-bg.png" alt=""></img>
+
+                <img className="About-bg-img" src="./images/hero/heroes-bg.png" alt=""></img>
+
             <Navigation />
             <div className="aboutDiv">
                 <h1 style={{fontSize: "37px", margin:0, wordSpacing: "0.3rem"}}>Vehicle Models</h1>
