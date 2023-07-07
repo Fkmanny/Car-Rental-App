@@ -71,7 +71,7 @@ export const Faq = () => {
         {/* === FAQ Dropdown 1 ============================================== */}
 
 
-        <button onClick={() => {change(1);}} className='fBtn faqButton1 active' id='faqButton1'><span><h4 className="faqh4">1. Ahat is special about comparing rental car deals? </h4></span>
+        <button onClick={() => {change(1);}} className='fBtn faqButton1 active' id='faqButton1'><span><h4 className="faqh4">1. What is special about comparing rental car deals? </h4></span>
         <span><FontAwesomeIcon icon={faAngleDown} className='icon1 active ic' size='xl'></FontAwesomeIcon></span>
         </button>
         <div className='faqBtn1Answer active' id='faqBtn1Answer'>

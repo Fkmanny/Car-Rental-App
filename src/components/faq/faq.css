@@ -139,7 +139,7 @@
     }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 860px) {
     .faq > button h4{
         font-size: 12px !important;
     }
@@ -149,7 +149,5 @@
         padding-bottom: 42px !important;
 
     }
-    .faq > button > span{
 
-    }
 }
