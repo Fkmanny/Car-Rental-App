@@ -441,8 +441,10 @@ btnEl3.addEventListener("mouseover", (event) => {
             </div>
 
             <span className="info-form__ checkbox">
-              <input type="checkbox"></input>
-              <p>Please send me latest news and updates</p>
+              <input type="checkbox" id="newsletter" />
+              <label htmlFor="newsletter">
+                Send me latest news and updates
+              </label>
             </span>
 
             <div className="reserve-button">
