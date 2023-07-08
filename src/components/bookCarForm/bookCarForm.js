@@ -45,7 +45,9 @@ btnEl3.addEventListener("mouseover", (event) => {
 
     // taking value of booking inputs
     const handleCar = (e) => {
-        setCarType(e.target.value);
+        setCarType(e.target.value); 
+        setCarImg(e.target.value);
+
     };
 
     const handlePick = (e) => {

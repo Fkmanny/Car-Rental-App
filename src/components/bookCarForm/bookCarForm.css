@@ -351,9 +351,7 @@
             text-align: start;
             justify-content: start;
         }
-        .dates span  i {
-            /* display: none; */
-        }
+
         .model{
             margin-top: 3.5rem;
         }
