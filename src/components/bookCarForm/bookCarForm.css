@@ -54,9 +54,286 @@
     height: 550px;
   }
 
+
+.error-message {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: 1rem 1.4rem;
+  margin-bottom: 1.8rem;
+  margin-top: -1rem;
+  border: 1px solid transparent;
+  border-radius: 0.8rem;
+  /* font-size: $p-size; */
+  font-weight: 500;
+
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}  
+
+  i {
+    cursor: pointer;
+  }
+
+.booking-done {
+  color: #2a6817;
+  background-color: #c3fabe;
+  border-color: #f5c6cb;
+  padding: 1rem 1.4rem;
+  margin-bottom: 1.8rem;
+  margin-top: -1rem;
+  border: 1px solid transparent;
+  border-radius: 0.8rem;
+  /* font-size: $p-size; */
+  font-weight: 500;
+
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.active-modal {
+  opacity: 1 !important;
+  display: flex !important;
+}
+
+.modal-overlay {
+  opacity: 0;
+  display: none;
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999999999;
+  top: 0;
+  right: 0;
+}
+
+.booking-modal {
+  opacity: 0;
+  display: none;
+
+  flex-direction: column;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 999999999999;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 100vh;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255);
+  padding-right: 2px;
+  color: black;
+}
+.title{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+        background-color: orangered;
+        color: white;
+        align-items: center;
+}
+.title > i{
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.919);
+    cursor: pointer;
+    transition: all 0.2;
+}
+.title > i:hover {
+    color: white;
+  }
+
+.BM_message{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 3rem;
+    background-color: #ffeae6;
+}
+.BM_message > h4{
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: orangered;
+}
+.BM_message > i{
+    font-size: 2.5rem;
+}
+.BM_message > p{
+    font-size: 1.7rem;
+    color: #777777;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.BM_car-info{
+    background-color: white;
+    padding: 3rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid #7777779f;
+}
+.BM_car-info .dates{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.dates h5, .model h5{
+    font-size: 1.8rem;
+    color: orangered;
+  }
+
+.dates h5 span {
+    display: flex;
+    gap: 1rem;
+}
+.dates h5 span  i {
+      font-size: 1.8rem;
+      padding-top: 0.2rem;
+      color: #777777;
+    }
+
+.dates h6{
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.dates p {
+    color: #777777;
+}
+.model{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.model h5 span{
+    color: black;
+}
+.model img{
+    width: 100%;
+    height: auto;
+}
+
+.person-info{
+    padding: 3rem 3rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.person-info h4{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: orangered;
+    margin-bottom: 2rem;
+}
+.input-time {
+    text-align: center;
+    width: 8rem;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+.info-form{
+    display: flex;
+    flex-direction: column;
+}
+.checkbox{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    /* font-size: $p-size; */
+    color: #565454;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.checkbox input {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+.col1{
+    grid-template-columns: 1fr !important;
+}
+.col1, .col2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+.coln span{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.coln span label{
+    /* font-size: $p-size; */
+    font-weight: 500;
+    color: #777777;
+
+}
+.coln span label b{
+    color: orangered
+}
+.coln span input{
+    padding: 14px 15px;
+    background-color: #dbdbdb;
+    color: #555;
+    font-size: 1.5rem;
+    font-weight: 500;
+    outline: none;
+    border: none;
+}
+
+.reserve-button {
+    background-color: #dbdbdb;
+    margin: 0 -3rem;
+    padding: 3rem;
+    text-align: right;
+}  
+
+.dates-div {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+  
+
+
+    @media screen and (max-width: 800px){
+        .booking-modal{
+             width: 100%;
+        }
+     }
     @media screen and (max-width: 660px){
         .bookForm{
             margin-top: 100px;
+        }
+        .col1, .col2{
+            grid-template-columns: 1fr;
+        }
+        .reserve-button {
+            text-align: center;
+        }
+        .booking-modal{
+            top: 50%;
+        }
+        .BM_car-info{
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+        .dates h5 span {
+            grid-template-columns: 1fr;
+            text-align: center;
+            justify-content: center;
+        }
+        .dates h5 span  i {
+            display: none;
+        }
+        .model{
+            margin-top: 3.5rem;
         }
         .bookForm input{
             width: 255px;
