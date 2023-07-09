@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import "../navigation/navigation.css";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faTimes } from '@fortawesome/free-solid-svg-icons';
+
+
 
 export const Navigation = () => {
   
+  // const ref = useRef(null);
+  // const isInView = useInView(ref, { once: true });
 
 useEffect(()=>{
   const registerBtn = document.querySelector(".Btn10")

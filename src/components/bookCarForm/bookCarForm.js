@@ -9,6 +9,7 @@ import CarToyota from "../images/cars-big/toyotacamry.jpg";
 import CarBmw from "../images/cars-big/bmw320.jpg";
 import CarMercedes from "../images/cars-big/benz.jpg";
 import CarPassat from "../images/cars-big/passatcc.jpg";
+import { motion } from 'framer-motion';
 
 export  const BookCarForm = () => {
   const [modal, setModal] = useState(false); //  class - active-modal
@@ -165,14 +166,22 @@ btnEl3.addEventListener("mouseover", (event) => {
 
   return (
   <>
-    <form className="bookForm">
+    <motion.form className="bookForm"
+          initial = {{ y : "100px", opacity: 1}}
+          animate = {{ y : 0, opacity: 1}}
+          transition={{ delay: 0.8, 
+            duration: 1.1,
+            type: 'spring', 
+            stiffness: 30
+          }}
+    >
         <div
           onClick={openModal}
           className={`modal-overlay ${modal ? "active-modal" : ""}`}
         ></div>
         <div className='containerr'>
             <div className="formHeader" style={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
-              <h2 style={{marginTop: 0}}>Cook a car</h2>
+              <h2 style={{marginTop: 0}}>Book a car</h2>
               <h4 style={{color: "white", padding: "5px 10px", backgroundColor: "#817f91", borderRadius: "3px"}}><span style={{fontWeight: "bold"}}>SAVE 15%</span> if you pay in advance</h4>
             </div>
             <p className="error-message">
@@ -249,7 +258,7 @@ btnEl3.addEventListener("mouseover", (event) => {
               </button>
             </div>
         </div>
-      </form>
+      </motion.form>
 
       {/* modal ------------------------------------ */}
 
