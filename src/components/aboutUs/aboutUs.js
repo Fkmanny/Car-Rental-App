@@ -2,10 +2,21 @@ import React from 'react'
 import "../aboutUs/aboutUs.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { motion } from 'framer-motion';
+
 
 export const AboutUs = () => {
   return (
-    <section className="aboutUs">
+    <motion.section className="aboutUs"
+    initial = {{ y : "110px", opacity: 1}}
+    whileInView = {{ y : "-15px", opacity: 1}}
+    transition={{ delay: 0.1, 
+      duration: 0.3,
+      type: 'spring', 
+      stiffness: 70
+    }}
+    viewport={{once : true}}
+    >
       <img src="images/about/about-main.jpg" style={{width: "400px", height: "414px"}}  alt=""/>
       <FontAwesomeIcon className='yt_icon' icon={faYoutube} />
       <div className="aboutUs-text">
@@ -38,6 +49,6 @@ export const AboutUs = () => {
               </div>
           </div>
       </div>
-  </section>
+  </motion.section>
   )
 }

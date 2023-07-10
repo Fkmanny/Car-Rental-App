@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import "../footer/footer.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleUp, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { motion } from 'framer-motion';
 
 export const Footer = () => {
   const [showButton, setShowButton] = useState(false);
@@ -34,7 +35,16 @@ window.addEventListener("scroll", () => {
   return (
     <footer>
           <div className="topFooter">
-            <div className="carRental footer1">
+            <motion.div className="carRental footer1"
+                initial = {{ x : "-410px" }}
+                whileInView = {{ x : 0}}
+                transition={{ delay: 0.4, 
+                  duration: 1,
+                  type: 'spring', 
+                  stiffness: 45
+                }}
+                viewport={{once : true}}
+            >
               <h3>CAR <span style={{fontWeight: 400}}>Rental</span></h3>
               <p>Use securing confined his shutters. Delightful as he it acceptance an solicitude discretion.</p>
               <div>
@@ -42,9 +52,18 @@ window.addEventListener("scroll", () => {
                 <a href="/"><FontAwesomeIcon className='icons' icon={faEnvelope} />example@carrental.com</a>
               </div>
               
-            </div>
+            </motion.div>
             
-            <div className="carRental footer2">
+            <motion.div className="carRental footer2"
+                  initial = {{ x : "-610px" }}
+                  whileInView = {{ x : 0}}
+                  transition={{ delay: 0.2, 
+                    duration: 1,
+                    type: 'spring', 
+                    stiffness: 45
+                  }}
+                  viewport={{once : true}}
+            >
               <h3>COMPANY</h3>
               <ul>
                 <li><a href="/">New York</a></li>
@@ -53,29 +72,55 @@ window.addEventListener("scroll", () => {
                 <li><a href="/">Blog</a></li>
                 <li><a href="/">How we work</a></li>
               </ul>
-            </div>
+            </motion.div>
 
-            <div className="carRental footer3">
+            <motion.div className="carRental footer3"
+                initial = {{ x : "610px" }}
+                whileInView = {{ x : 0}}
+                transition={{ delay: 0.2, 
+                  duration: 1,
+                  type: 'spring', 
+                  stiffness: 45
+                }}
+                viewport={{once : true}}
+            >
               <h3>WORKING HOURS</h3>
               <p>Mon - Fri: <span>09:00AM - 09:00PM</span></p>
               <p>Sat: <span>09:00AM - 07:00PM</span></p>
               <p>Sun: <span>Closed</span></p>
-            </div>
+            </motion.div>
 
-            <div className="carRental footer4">
+            <motion.div className="carRental footer4"
+                initial = {{ x : "410px" }}
+                whileInView = {{ x : 0}}
+                transition={{ delay: 0.4, 
+                  duration: 1,
+                  type: 'spring', 
+                  stiffness: 45
+                }}
+                viewport={{once : true}}
+            >
               <h3>SUBSCRIPTION</h3>
               <p>Subscribe your Email address for latest news & updates.</p>
               <div>
                 <input type="email" placeholder="Enter Email Address"/>
                 <button className="btn99"><span>Submit</span></button>
               </div>
-            </div>
+            </motion.div>
             
           </div>
-          <div className="bottomFooter">
+          <motion.div className="bottomFooter"
+                initial = {{ opacity : 0}}
+                whileInView = {{ opacity : 1}}
+                transition={{ delay: 0.4, 
+                  duration: 1.5,
+
+                }}
+                viewport={{once : true}}
+          >
             <a href="https://xpeedstudio.com/"> Design by XpeedStudio </a>
             <p>©2023 Car Rental. Development by <b style={{color: "black"}}>Emmanuel</b> </p>
-          </div>
+          </motion.div>
           {showButton && (
               <FontAwesomeIcon onClick={scrollToTop} icon={faAngleUp} size="2xl" className="icon10" />
           )}

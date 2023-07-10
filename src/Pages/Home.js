@@ -25,12 +25,12 @@ function Home() {
                 }}    
         >
               <motion.div
-                initial = {{ y : "-100px", opacity: 1}}
-                animate = {{ y : 0, opacity: 1}}
+                initial = {{ y : "-100px"}}
+                animate = {{ y : 0}}
                 transition={{ delay: 0.2, 
                   duration: 1.1,
                   type: 'spring', 
-                  stiffness: 40
+                  stiffness: 60
                 }}
               >
                 <Navigation /> 

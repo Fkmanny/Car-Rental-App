@@ -2,6 +2,8 @@ import React, { useEffect}from 'react'
 import "../faq/faq.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import { motion } from 'framer-motion';
+
 
 export const Faq = () => {
 
@@ -61,7 +63,16 @@ export const Faq = () => {
  
 
   return (
-    <section className="faq">
+    <motion.section className="faq"
+    initial = {{ y : "110px", opacity: 1}}
+    whileInView = {{ y : "-15px", opacity: 1}}
+    transition={{ delay: 0.1, 
+      duration: 0.3,
+      type: 'spring', 
+      stiffness: 70
+    }}
+    viewport={{once : true}}
+    >
         <h3 style={{margin: 0, fontFamily: "Rubik, sans-serif", fontWeight: 500}}>FAQ</h3>
         <h1 style={{fontSize: "45px", margin: "5px 0 10px 0"}}>Frequently Asked Questions</h1>
         <p  style={{width: "50%", textAlign: "center", lineHeight: "1.55rem", marginBottom: "40px"}}>Frequently Asked Questions 
@@ -106,6 +117,6 @@ export const Faq = () => {
         </div>
 
 
-    </section>
+    </motion.section>
   )
 }

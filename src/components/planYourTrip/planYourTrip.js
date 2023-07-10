@@ -1,5 +1,6 @@
 import React from 'react';
 import "../planYourTrip/planYourTrip.css";
+import { motion } from 'framer-motion';
 
 
 export const PlanYourTrip = () => {
@@ -12,7 +13,16 @@ export const PlanYourTrip = () => {
   }
 
   return (
-    <section className="planYourTrip">
+    <motion.section className="planYourTrip"
+    initial = {{ y : "70px", opacity: 1}}
+    whileInView = {{ y : "-30px", opacity: 1}}
+    transition={{ delay: 0.1, 
+      duration: 0.3,
+      type: 'spring', 
+      stiffness: 90
+    }}
+    viewport={{once : true}}
+    >
               <h3 style={{marginBottom: "13px", fontWeight: 500,}}>Plan your trip now</h3>
               <h1 style={{marginTop: 0, fontSize: "45px"}}>Quick & easy car rental</h1>
               <div className="section2Div">
@@ -34,6 +44,6 @@ export const PlanYourTrip = () => {
               </div>
               
             
-          </section>
+          </motion.section>
   )
 }

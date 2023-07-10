@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import "../chooseUs/chooseUs.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import { motion } from 'framer-motion'
 
 export const ChooseUs = () => {
 
@@ -22,7 +23,16 @@ btnEl33.addEventListener("mouseover", (event) => {
 });
   })
   return (
-    <section className="chooseUs">
+    <motion.section className="chooseUs"
+    initial = {{ y : "110px", opacity: 1}}
+    whileInView = {{ y : "-15px", opacity: 1}}
+    transition={{ delay: 0.1, 
+      duration: 0.3,
+      type: 'spring', 
+      stiffness: 70
+    }}
+    viewport={{once : true}}
+    >
       <img style={{width: "1150px"}} src="images/chooseUs/main.png" alt=""/>
       <div className="chooseContainers">
         <div className="why">
@@ -34,29 +44,56 @@ btnEl33.addEventListener("mouseover", (event) => {
           <button className="btn33"><span>Find Deals <FontAwesomeIcon icon={faAngleRight} style={{marginLeft: "10px"}}/></span></button>
         </div>
         <div className="why2">
-          <div onMouseOver={hoverNow} className="why2sub obj4">
+          <motion.div onMouseOver={hoverNow} className="why2sub obj4"
+              initial = {{ x : "610px", opacity: 1}}
+              whileInView = {{ x : 0, opacity: 1}}
+              transition={{ delay: 0.1, 
+                duration: 0.3,
+                type: 'tween', 
+                stiffness: 80
+              }}
+              viewport={{once : true}}
+          >
             <img src="images/chooseUs/icon1.png" alt=""/>
             <div>
               <h3>Cross Country Drive</h3>
               <p>Speedily say has suitable disposal add boy. On forth doubt miles of child. Exercise joy man children rejoiced.</p>
             </div>
-          </div>
-          <div onMouseOver={hoverNow} className="why2sub obj5">
+          </motion.div>
+          <motion.div onMouseOver={hoverNow} className="why2sub obj5"
+              initial = {{ x : "610px", opacity: 1}}
+              whileInView = {{ x : 0, opacity: 1}}
+              transition={{ delay: 0.15, 
+                duration: 0.3,
+                type: 'tween', 
+                stiffness: 80
+              }}
+              viewport={{once : true}}
+          >
             <img src="images/chooseUs/icon2.png" alt=""/>
             <div>
               <h3>All Inclusive Pricing</h3>
               <p>Yet uncommonly his ten who diminution astonished. Demesne new manners savings staying had.</p>
             </div>
-          </div>
-          <div onMouseOver={hoverNow} className="why2sub obj6">
+          </motion.div>
+          <motion.div onMouseOver={hoverNow} className="why2sub obj6"
+              initial = {{ x : "610px", opacity: 1}}
+              whileInView = {{ x : 0, opacity: 1}}
+              transition={{ delay: 0.2, 
+                duration: 0.3,
+                type: 'tween', 
+                stiffness: 80
+              }}
+              viewport={{once : true}}
+          >
             <img src="images/chooseUs/icon3.png" alt=""/>
             <div>
               <h3>No Hidden Charges</h3>
               <p>Under folly balls death own point now men. Match way these she avoid see. She whose drift their fat off..</p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
-   </section>
+   </motion.section>
   )
 }

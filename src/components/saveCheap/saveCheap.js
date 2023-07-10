@@ -2,6 +2,8 @@ import React from 'react'
 import "../saveCheap/saveCheap.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' 
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
+import { motion } from 'framer-motion';
+
 
 export const SaveCheap = () => {
 
@@ -9,7 +11,16 @@ export const SaveCheap = () => {
 
 
   return (
-    <section className="saveCheapSection">
+    <motion.section className="saveCheapSection"
+      initial = {{ y : "110px", opacity: 1}}
+      whileInView = {{ y : "-15px", opacity: 1}}
+      transition={{ delay: 0.1, 
+        duration: 0.3,
+        type: 'spring', 
+        stiffness: 70
+      }}
+      viewport={{once : true}}
+    >
             <div className="backgroundImage"></div>
             <div className="innerSP">
               <div className="innerSPLeft">
@@ -18,6 +29,6 @@ export const SaveCheap = () => {
               </div>
               <button className="bookRide"><span>Book Ride <FontAwesomeIcon style={{marginLeft: "10px"}} icon={faCircleCheck} /></span></button>
             </div>
-    </section>
+    </motion.section>
   )
 }

@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "./testimonials.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+import { motion } from 'framer-motion';
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -13,7 +14,16 @@ import { EffectCoverflow, Pagination } from "swiper";
 
 export const Testimonialss = () => {
   return (
-    <section className="testimonials">
+    <motion.section className="testimonials"
+      initial = {{ y : "110px", opacity: 1}}
+      whileInView = {{ y : "-15px", opacity: 1}}
+      transition={{ delay: 0.1, 
+        duration: 0.3,
+        type: 'spring', 
+        stiffness: 70
+      }}
+      viewport={{once : true}}    
+    >
           <div>
               <h3 style={{margin: 0, fontFamily: "Rubik, sans-serif", fontWeight: 500}}>Reviewed by People</h3>
               <h1 style={{fontSize: "45px", margin: "5px 0 10px 0"}}>Clients' Testimonials</h1>
@@ -109,6 +119,6 @@ export const Testimonialss = () => {
           
         </div>
           
-        </section>
+        </motion.section>
   )
 }

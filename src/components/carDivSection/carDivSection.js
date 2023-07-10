@@ -2,6 +2,7 @@ import React from 'react'
 import "./carDivSection.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase, faCar, faCarSide, faGaugeHigh, faStar } from '@fortawesome/free-solid-svg-icons'
+import { motion } from 'framer-motion';
 
 export const CarDivSection = (props) => {
     
@@ -13,7 +14,16 @@ export const CarDivSection = (props) => {
       }
 
   return (
-    <div onMouseOver={hoverNow} className={`carDiv carImg${props.id}`}>
+    <motion.div onMouseOver={hoverNow} className={`carDiv carImg${props.id}`}
+        initial = {{ y : "110px", opacity: 1}}
+        whileInView = {{ y : "-15px", opacity: 1}}
+        transition={{ delay: 0.1, 
+        duration: 0.3,
+        type: 'spring', 
+        stiffness: 70
+        }}
+        viewport={{once : true}}
+    >
         <div style={{overflow: "hidden"}}>
             <img src={`./${props.img}`}  alt='' />
         </div>
@@ -46,6 +56,6 @@ export const CarDivSection = (props) => {
         <div className='BRBtn'>
         <button><span>Book Ride</span></button>
         </div>
-    </div>
+    </motion.div>
   )
 }
