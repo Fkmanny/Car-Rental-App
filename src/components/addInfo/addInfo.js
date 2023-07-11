@@ -2,11 +2,20 @@ import React from 'react'
 import "./addInfo.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faEnvelopeOpen, faHome, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { motion } from 'framer-motion';
 
 export const AddInfo = () => {
   return (
     <div className='init-addinfo'>
-        <img className='map' src= "./images/banners/map.png"alt='' style={{height: "80%", width : "100%" }} />
+        <motion.img className='map' src= "./images/banners/map.png"alt='' style={{height: "80%", width : "100%" }}
+                initial = {{ filter : "brightness(0.5) saturate(0%)"}}
+                whileInView = {{ filter : "brightness(1) saturate(100%)"}}
+                transition={{ delay: 0.2, 
+                duration: 1.3,
+
+                }}
+                viewport={{once : true}}
+         />
 
         <div className='AddInfoDiv'>
             <div className='AddInfoDiv1'>

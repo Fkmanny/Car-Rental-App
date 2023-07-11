@@ -4,16 +4,14 @@ import { motion } from 'framer-motion'
 
 export const Download = () => {
   return (
-    <section className="download"
-
-    >
+    <section className="download">
           <motion.div className="downloadLeft"
-                initial = {{ x : "-710px", opacity: 1}}
-                whileInView = {{ x : 0, opacity: 1}}
-                transition={{ delay: 0.2, 
-                  duration: 1,
+                initial = {{ x : "-50vw", opacity: 1}}
+                whileInView = {{ x : 0,  opacity: 1}}
+                transition={{ delay: 0.1, 
                   type: 'spring', 
-                  stiffness: 50
+                  duration: 2.5,
+                  stiffness: 30
                 }}
                 viewport={{once : true}}
           >

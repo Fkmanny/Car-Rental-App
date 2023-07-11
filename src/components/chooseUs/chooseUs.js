@@ -49,8 +49,8 @@ btnEl33.addEventListener("mouseover", (event) => {
               whileInView = {{ x : 0, opacity: 1}}
               transition={{ delay: 0.1, 
                 duration: 0.3,
-                type: 'tween', 
-                stiffness: 80
+                type: 'spring', 
+                stiffness: 40
               }}
               viewport={{once : true}}
           >
@@ -65,8 +65,8 @@ btnEl33.addEventListener("mouseover", (event) => {
               whileInView = {{ x : 0, opacity: 1}}
               transition={{ delay: 0.15, 
                 duration: 0.3,
-                type: 'tween', 
-                stiffness: 80
+                type: 'spring', 
+                stiffness: 40
               }}
               viewport={{once : true}}
           >
@@ -81,8 +81,8 @@ btnEl33.addEventListener("mouseover", (event) => {
               whileInView = {{ x : 0, opacity: 1}}
               transition={{ delay: 0.2, 
                 duration: 0.3,
-                type: 'tween', 
-                stiffness: 80
+                type: 'spring', 
+                stiffness: 40
               }}
               viewport={{once : true}}
           >

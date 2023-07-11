@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import "../pickCar/pickCar.css";
 import data  from "../data";
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
 
 
@@ -95,15 +95,15 @@ export const PickCar = () => {
 
 
   return (
-    <motion.div className="pickCarSection"
-    initial = {{ y : "110px", opacity: 1}}
-    whileInView = {{ y : "-15px", opacity: 1}}
-    transition={{ delay: 0.1, 
-      duration: 0.3,
-      type: 'spring', 
-      stiffness: 70
-    }}
-    viewport={{once : true}}
+    <div className="pickCarSection"
+    // initial = {{ y : "110px", opacity: 1}}
+    // whileInView = {{ y : "-15px", opacity: 1}}
+    // transition={{ delay: 0.1, 
+    //   duration: 0.3,
+    //   type: 'spring', 
+    //   stiffness: 70
+    // }}
+    // viewport={{once : true}}
     >
           <h3 style={{margin: 0, padding: 0, fontWeight: 500}}>Vehicle Models</h3>
           <h1 style={{margin: 0, padding: 0, fontSize: "45px"}} >Our rental fleet</h1>
@@ -123,6 +123,6 @@ export const PickCar = () => {
           </div>
 
 
-    </motion.div>
+    </div>
   )
 }

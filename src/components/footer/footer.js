@@ -36,9 +36,9 @@ window.addEventListener("scroll", () => {
     <footer>
           <div className="topFooter">
             <motion.div className="carRental footer1"
-                initial = {{ x : "-410px" }}
+                initial = {{  x : "-25vw" }}
                 whileInView = {{ x : 0}}
-                transition={{ delay: 0.4, 
+                transition={{ delay: 0.3, 
                   duration: 1,
                   type: 'spring', 
                   stiffness: 45
@@ -55,7 +55,7 @@ window.addEventListener("scroll", () => {
             </motion.div>
             
             <motion.div className="carRental footer2"
-                  initial = {{ x : "-610px" }}
+                  initial = {{  x : "-30vw" }}
                   whileInView = {{ x : 0}}
                   transition={{ delay: 0.2, 
                     duration: 1,
@@ -75,7 +75,7 @@ window.addEventListener("scroll", () => {
             </motion.div>
 
             <motion.div className="carRental footer3"
-                initial = {{ x : "610px" }}
+                initial = {{  x : "30vw" }}
                 whileInView = {{ x : 0}}
                 transition={{ delay: 0.2, 
                   duration: 1,
@@ -91,9 +91,9 @@ window.addEventListener("scroll", () => {
             </motion.div>
 
             <motion.div className="carRental footer4"
-                initial = {{ x : "410px" }}
+                initial = {{ x : "25vw" }}
                 whileInView = {{ x : 0}}
-                transition={{ delay: 0.4, 
+                transition={{ delay: 0.3, 
                   duration: 1,
                   type: 'spring', 
                   stiffness: 45
@@ -112,8 +112,8 @@ window.addEventListener("scroll", () => {
           <motion.div className="bottomFooter"
                 initial = {{ opacity : 0}}
                 whileInView = {{ opacity : 1}}
-                transition={{ delay: 0.4, 
-                  duration: 1.5,
+                transition={{ delay: 0.35, 
+                  duration: 1,
 
                 }}
                 viewport={{once : true}}
