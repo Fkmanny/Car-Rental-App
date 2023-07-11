@@ -16,7 +16,7 @@ export const PlanYourTrip = () => {
     <motion.section className="planYourTrip"
     initial = {{ y : "70px", opacity: 1}}
     whileInView = {{ y : 0, opacity: 1}}
-    transition={{ delay: 0.1, 
+    transition={{ delay: 0, 
       duration: 0.3,
       type: 'spring', 
       stiffness: 90

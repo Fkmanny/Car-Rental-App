@@ -14,7 +14,7 @@ export const SaveCheap = () => {
     <motion.section className="saveCheapSection"
       initial = {{ y : "110px", opacity: 1}}
       whileInView = {{ y : "-15px", opacity: 1}}
-      transition={{ delay: 0.1, 
+      transition={{ delay: 0, 
         duration: 0.3,
         type: 'spring', 
         stiffness: 70
