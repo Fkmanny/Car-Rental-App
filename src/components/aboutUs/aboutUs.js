@@ -1,4 +1,4 @@
-import React from 'react'
+import React , { useState, useEffect} from 'react'
 import "../aboutUs/aboutUs.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
@@ -6,6 +6,30 @@ import { motion } from 'framer-motion';
 
 
 export const AboutUs = () => {
+  const [carTypes, setCarTypes] = useState(0);
+  const [rentalOutlets, setRentalOutlets] = useState(0);
+  const [repairShops, setRepairShops] = useState(0);
+
+  useEffect(() => {
+    const animateCount = (targetValue, setter) => {
+      let currentValue = 0;
+      const increment = targetValue / 200; // Adjust the increment value as per your preference
+
+      const timer = setInterval(() => {
+        currentValue += increment;
+        if (currentValue >= targetValue) {
+          clearInterval(timer);
+          currentValue = targetValue;
+        }
+
+        setter(Math.floor(currentValue));
+      }, 20); // Adjust the interval duration (in milliseconds) for a slower animation
+    };
+
+    animateCount(20, setCarTypes);
+    animateCount(85, setRentalOutlets);
+    animateCount(75, setRepairShops);
+  }, []);
   return (
     <motion.section className="aboutUs"
     initial = {{ y : "110px", opacity: 1}}
@@ -29,21 +53,21 @@ export const AboutUs = () => {
               <div className="about">
                 <img src="images/about/icon1.png" alt=""/>
                 <div>
-                  <h1 className="carTypeValue">20</h1>
+                  <h1 className="carTypeValue">{carTypes}</h1>
                   <h4>Car Types</h4>
                 </div>
               </div>
               <div className="about">
                 <img src="images/about/icon2.png" alt=""/>
                 <div>
-                  <h1 className="rentalValue">85</h1>
+                  <h1 className="rentalValue">{rentalOutlets}</h1>
                   <h4>Rental Outlets</h4>
                 </div>
               </div>
               <div className="about">
                 <img src="images/about/icon2.png" alt=""/>
                 <div>
-                  <h1 className="repairValue">75</h1>
+                  <h1 className="repairValue">{repairShops}</h1>
                   <h4>Repair Shop</h4>
                 </div>
               </div>
