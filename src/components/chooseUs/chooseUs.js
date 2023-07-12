@@ -45,7 +45,7 @@ btnEl33.addEventListener("mouseover", (event) => {
         </div>
         <div className="why2">
           <motion.div onMouseOver={hoverNow} className="why2sub obj4"
-              initial = {{ x : "50vw", opacity: 1}}
+              initial = {{ x : "40vw", opacity: 1}}
               whileInView = {{ x : 0, opacity: 1}}
               transition={{ delay: 0.1, 
                 duration: 0.3,
@@ -61,7 +61,7 @@ btnEl33.addEventListener("mouseover", (event) => {
             </div>
           </motion.div>
           <motion.div onMouseOver={hoverNow} className="why2sub obj5"
-              initial = {{ x : "50vw", opacity: 1}}
+              initial = {{ x : "40vw", opacity: 1}}
               whileInView = {{ x : 0, opacity: 1}}
               transition={{ delay: 0.15, 
                 duration: 0.3,
@@ -77,7 +77,7 @@ btnEl33.addEventListener("mouseover", (event) => {
             </div>
           </motion.div>
           <motion.div onMouseOver={hoverNow} className="why2sub obj6"
-              initial = {{ x : "50vw", opacity: 1}}
+              initial = {{ x : "40vw", opacity: 1}}
               whileInView = {{ x : 0, opacity: 1}}
               transition={{ delay: 0.2, 
                 duration: 0.3,
