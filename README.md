@@ -1,10 +1,10 @@
-![logo](https://github.com/Fkmanny/Car-Rental-App/assets/111753024/778f8529-13f7-455e-a1d0-9f2dee5c9ab3)
+<img align="center" src="https://github.com/Fkmanny/Car-Rental-App/assets/111753024/778f8529-13f7-455e-a1d0-9f2dee5c9ab3" alt="fkjiggy" height="30" width="40" />
 
 # About the Project
 
-### A website that allows you rent, compare, and have cars delivered at low cost to the comfort of your home or business in less than an hour, with just your device.
+#### A website that allows you rent, compare, and have cars delivered at low cost to the comfort of your home or business in less than an hour, with just your device.
 
-	(":point_right:") Live Site : [Live Site](https://car-rental-app-2.netlify.app/)
+👉 Live Site : [Live Site](https://car-rental-app-2.netlify.app/)
 
 ## Built with : 
 - React JS
