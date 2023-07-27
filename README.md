@@ -1,4 +1,4 @@
-<img align="center" src="https://github.com/Fkmanny/Car-Rental-App/assets/111753024/778f8529-13f7-455e-a1d0-9f2dee5c9ab3" alt="fkjiggy" height="30" width="40" />
+<img align="center" src="https://github.com/Fkmanny/Car-Rental-App/assets/111753024/778f8529-13f7-455e-a1d0-9f2dee5c9ab3" alt="fkjiggy" height="60" width="80" />
 
 # About the Project
 
