@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase, faCar, faCarSide, faGaugeHigh, faStar } from '@fortawesome/free-solid-svg-icons'
 import { motion } from 'framer-motion';
 
+// This Component comprises of all the Vehicle cards on the Vehicle Models Page
+
 export const CarDivSection = (props) => {
     
     const hoverNow = ()=>{

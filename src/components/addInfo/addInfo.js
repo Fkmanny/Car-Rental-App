@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faEnvelopeOpen, faHome, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
 
+    // This Component is used to get user input
+
+
 export const AddInfo = () => {
   return (
     <div className='init-addinfo'>

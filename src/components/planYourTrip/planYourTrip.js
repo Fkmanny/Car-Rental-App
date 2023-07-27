@@ -2,6 +2,7 @@ import React from 'react';
 import "../planYourTrip/planYourTrip.css";
 import { motion } from 'framer-motion';
 
+ // Planning Your Trip processes Component
 
 export const PlanYourTrip = () => {
 

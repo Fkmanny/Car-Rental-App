@@ -2,6 +2,8 @@ import React from 'react'
 import "../download/download.css"
 import { motion } from 'framer-motion'
 
+// With this Component Clients can Download our App on IOS or Android
+
 export const Download = () => {
   return (
     <section className="download">

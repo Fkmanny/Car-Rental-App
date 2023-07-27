@@ -4,8 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import { motion } from 'framer-motion'
 
+// This Component is a brief summary of why we are the best Car Rental company
+
 export const ChooseUs = () => {
 
+  // Choose US Hover Effect
   const hoverNow = ()=>{
     const rand = 3;
     for (let index = 4; rand <= 6; index++) {

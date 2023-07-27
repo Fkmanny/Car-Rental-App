@@ -6,6 +6,8 @@ import { motion } from 'framer-motion';
 
 
 export const AboutUs = () => {
+  
+  // Variable Declarations
   const [carTypes, setCarTypes] = useState(0);
   const [rentalOutlets, setRentalOutlets] = useState(0);
   const [repairShops, setRepairShops] = useState(0);

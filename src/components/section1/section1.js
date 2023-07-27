@@ -5,10 +5,11 @@ import { faAngleRight, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-
+ // This is the default Homepage screen Component
 
 export const Section1 = () => {
 
+  // Button Effect
   useEffect(()=>{
     const btnEln = document.querySelector(".btnn");
     btnEln.addEventListener("mouseover", (event) => {

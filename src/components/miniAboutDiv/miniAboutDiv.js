@@ -2,6 +2,8 @@ import React from 'react'
 import "./miniAboutDiv.css"
 import { Link } from 'react-router-dom'
 
+//This is the Mini About Component at the top left of the other pages
+
 export const MiniAboutDiv = () => {
   return (
     <div className="aboutDiv">

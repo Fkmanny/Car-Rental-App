@@ -3,10 +3,9 @@ import "../pickCar/pickCar.css";
 import data  from "../data";
 // import { motion } from 'framer-motion';
 
-
+ // Compare Cars together with this Component
 
 export const PickCar = () => {
-  // const [id, details] = useState('');
   useEffect(() => {
 
         // ================ Pick Car Buttons =====================================================

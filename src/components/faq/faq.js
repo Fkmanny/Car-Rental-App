@@ -4,9 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { motion } from 'framer-motion';
 
+// This is the Frequently Asked Questions Component
 
 export const Faq = () => {
 
+  // Frequently Asked Questions dropdown effect
   useEffect(() => {
     const faqButton1 = document.getElementById("faqButton1");
     faqButton1.addEventListener("mouseover", (event) => {

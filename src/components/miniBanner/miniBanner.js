@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { motion } from 'framer-motion';
 
+// A Dark themed short Banner
+
 export const MiniBanner = () => {
   return (
     <motion.div className='miniBanner'

@@ -11,6 +11,8 @@ import CarMercedes from "../images/cars-big/benz.jpg";
 import CarPassat from "../images/cars-big/passatcc.jpg";
 import { motion } from 'framer-motion';
 
+// This form is filled when a client wants to rent a vehicle
+
 export  const BookCarForm = () => {
   const [modal, setModal] = useState(false); //  class - active-modal
 

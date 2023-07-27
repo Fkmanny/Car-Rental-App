@@ -4,7 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleUp, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { motion } from 'framer-motion';
 
+//Footer Component
+
 export const Footer = () => {
+
+  //Variable Declaration
   const [showButton, setShowButton] = useState(false);
   useEffect(()=>{
     const btnEl99 = document.querySelector(".btn99");

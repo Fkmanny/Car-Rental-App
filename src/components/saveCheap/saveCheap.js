@@ -4,11 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 import { motion } from 'framer-motion';
 
+ // This is the SaveCheap Component
 
 export const SaveCheap = () => {
-
- 
-
 
   return (
     <motion.section className="saveCheapSection"

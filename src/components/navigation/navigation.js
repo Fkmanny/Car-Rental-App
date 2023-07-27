@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import "../navigation/navigation.css";
 
-
+// The Navigation Bar Component
 
 export const Navigation = () => {
   

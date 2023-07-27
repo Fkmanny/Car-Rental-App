@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 
 import { EffectCoverflow, Pagination } from "swiper";
 
+// The Testimonial Carousel Component
 
 export const Testimonialss = () => {
   return (
